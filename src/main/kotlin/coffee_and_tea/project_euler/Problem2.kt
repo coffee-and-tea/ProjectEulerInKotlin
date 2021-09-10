@@ -29,6 +29,7 @@ object fibGenerator : Iterator<Int> {
     }
 }
 
+
 val result = fibGenerator.asSequence().filter { it % 2 == 0 }.map { it.toLong() }.sum()
 
 fun main() {
